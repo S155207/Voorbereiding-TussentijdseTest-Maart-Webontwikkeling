@@ -14,8 +14,6 @@ async function main() {
         try {
             const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=50/');
             todos = await response.json();
-            console.log("ok");
-
         } catch (error: any) {
             console.log(error);
         };
